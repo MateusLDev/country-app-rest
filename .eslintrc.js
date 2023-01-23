@@ -1,17 +1,53 @@
 module.exports = {
   root: true,
   env: {
-    node: true
+    node: true,
   },
-  'extends': [
-    'plugin:vue/essential',
-    'eslint:recommended'
-  ],
+  extends: ['plugin:vue/essential', 'eslint:recommended'],
   parserOptions: {
-    parser: '@babel/eslint-parser'
+    parser: '@babel/eslint-parser',
   },
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off'
-  }
-}
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    'lines-between-class-members': 'off',
+    'no-unused-vars': 'off',
+    'no-trailing-spaces': 'off',
+    'max-len': ['error', { code: 1200 }],
+    'linebreak-style': ['error', 'windows'],
+    'vue/max-attributes-per-line': 'off',
+    camelcase: 'off',
+    'import/prefer-default-export': 'off',
+    'no-else-return': 'off',
+    semi: 'off',
+    'prefer-destructuring': 'off',
+    'no-shadow': 'off',
+    'import/order': 'off',
+    'spaced-comment': 'off',
+    'no-lonely-if': 'off',
+    'no-alert': 'off',
+    'object-curly-newline': 'off',
+    'class-methods-use-this': 'off',
+    'operator-linebreak': 'off',
+    'prefer-template': 'off',
+    'implicit-arrow-linebreak': 'off',
+    'comma-dangle': 'off',
+    'import/newline-after-import': 'off',
+    'no-underscore-dangle': 'off',
+    'no-param-reassign': 'off',
+    'function-paren-newline': 'off',
+    'no-use-before-define': 'off',
+    'consistent-return': 'off',
+    indent: 'off',
+    'no-return-assign': 'off',
+    'no-this-alias': 'off',
+    'no-eval': 'off',
+    '@typescript-eslint/no-var-requires': 'off',
+    'no-plusplus': 'off',
+    'nonblock-statement-body-position': 'off',
+    'import/no-cycle': 'off',
+    curly: 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
+    'import/no-extraneous-dependencies': 'off',
+  },
+};
